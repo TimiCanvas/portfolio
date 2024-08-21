@@ -550,6 +550,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .about__photo-container {
     margin-bottom: var(--gutter-normal);
+    text-align: center;
 }
 
 @media(min-width: 901px) {
