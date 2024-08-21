@@ -405,7 +405,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .header {
     background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
-        url('./images/header.jpg');
+        url('images/background.jpg');
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -541,7 +541,7 @@ body:not(.user-is-tabbing) a:focus {
     align-items: center;
 }
 
-@media(max-width: 900px) {
+@media (max-width: 900px) {
     .about__content {
         flex-direction: column-reverse;
         align-items: initial;
@@ -550,19 +550,26 @@ body:not(.user-is-tabbing) a:focus {
 
 .about__photo-container {
     margin-bottom: var(--gutter-normal);
-    text-align: center;
 }
 
-@media(min-width: 901px) {
+.about__photo {
+    width: 350px; /* Reduced size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Slight border radius */
+    object-fit: cover; /* Ensure it fits well */
+}
+
+@media (min-width: 901px) {
     .about__text {
         flex: 0 0 35%;
     }
-    
+
     .about__photo-container {
         flex: 1;
         margin: 0 var(--gutter-huge) 0 0;
     }
 }
+
 
 /* --------------------------------------- */
 /* ----- Contact ----- */
