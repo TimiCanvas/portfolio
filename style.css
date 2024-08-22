@@ -221,10 +221,12 @@ body:not(.user-is-tabbing) a:focus {
     color: inherit;
     border: 1px solid  var(--pink);
     font-weight: 400;
+    border-radius: 10px;
 }
 
 .btn:focus {
     outline: none;
+    border-radius: 10px;
 }
 
 .btn::after {
@@ -238,26 +240,31 @@ body:not(.user-is-tabbing) a:focus {
     height: 100%;
     z-index: -1;
     transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
+    border-radius: 10px;
 }
 
 .btn:hover::after,
 .btn:focus::after {
     right: 0;
     background: var(--pink);
+    border-radius: 10px;
 }
 
 .btn--pink {
     background: var(--pink);
     transition: all 0.2s;
+    border-radius: 10px;
 }
 
 .btn--pink::after {
     display: none;
+    border-radius: 10px;
 }
 
 .btn--pink:hover,
 .btn--pink:focus {
     background: transparent;
+    border-radius: 10px;
 }
 
 .link__text {
